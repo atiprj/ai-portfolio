@@ -221,7 +221,7 @@ export default function Home() {
         <div className="modal modal-open">
           <div className="modal-box">
             {modalContent.type === "image" && (
-              <Image src={modalContent.content} alt={modalContent.title} width={800} height={600} objectFit="contain" />
+              <Image src={modalContent.content} alt={modalContent.title} width={1000} height={800} objectFit="contain" />
             )}
             {modalContent.type === "video" && (
               <video src={modalContent.content} controls className="w-full" />
