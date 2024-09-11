@@ -35,12 +35,12 @@ const works: Work[] = [
   },
   {
     id: 3,
-    title: "AI Music Composition",
-    description: "A beautiful melody composed by our AI music generator.",
-    tool: "xxx",
-    date: "2021.10.24",
+    title: "Beats of the Cosmos",
+    description: "Techno Ambient Blend",
+    tool: "Loudly",
+    date: "2024.08.24",
     type: "audio",
-    content: "https://example.com/ai-generated-music.mp3",
+    content: "https://www.loudly.com/music/song/aisong-Beats%20of%20the%20Cosmos-fb6ccd6a-7089-11ef-b6e3-06b28167ed55",
   },
   {
     id: 4,
