@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && node create-nojekyll.js && gh-pages -d out --dotfiles"
+    "deploy": "next build && node create-nojekyll.js && gh-pages -d out --dotfiles --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
   },
   "dependencies": {
     "next": "14.2.9",
