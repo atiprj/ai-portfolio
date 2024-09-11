@@ -106,21 +106,21 @@ export default function Home() {
     setModalContent(null)
   }
 
-  // Funzione per assegnare colori diversi in base al tipo di card
+  // Funzione per assegnare colori tenui in scala di grigi in base al tipo di card
   const getCardColor = (type: Work['type']) => {
     switch (type) {
       case 'image':
-        return 'bg-blue-200';
+        return 'bg-gray-100';
       case 'video':
-        return 'bg-green-200';
-      case 'audio':
-        return 'bg-yellow-200';
-      case 'text':
-        return 'bg-purple-200';
-      case 'embed':
-        return 'bg-red-200';
-      default:
         return 'bg-gray-200';
+      case 'audio':
+        return 'bg-gray-300';
+      case 'text':
+        return 'bg-gray-400';
+      case 'embed':
+        return 'bg-gray-500';
+      default:
+        return 'bg-gray-100';
     }
   }
 
@@ -199,8 +199,8 @@ export default function Home() {
                     </div>
                   )}
                 </figure>
-                <div className="card-body text-center"> {/* Allinea i testi al centro */}
-                  <p className="text-sm text-gray-500 mb-2">{work.date}</p> {/* Data sopra il titolo */}
+                <div className="card-body text-left space-y-4"> {/* Allinea il testo a sinistra e imposta spaziatura uniforme */}
+                  <p className="text-sm text-gray-500">{work.date}</p> {/* Data sopra il titolo */}
                   <h2 className="card-title">{work.title}</h2>
                   <p>{work.description}</p>
                   <p className="text-sm text-gray-500">Tools: {work.tool}</p>
