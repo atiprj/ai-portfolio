@@ -2,8 +2,17 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 
+// Define the Work type
+type Work = {
+  id: number;
+  title: string;
+  description: string;
+  type: 'image' | 'audio' | 'text' | 'video' | 'embed';
+  content: string;
+}
+
 // Simulated data for AI-generated works
-const works = [
+const works: Work[] = [
   {
     id: 1,
     title: "AI-Generated Landscape",
@@ -49,12 +58,12 @@ const works = [
 ]
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("all")
-  const [modalContent, setModalContent] = useState(null)
+  const [activeTab, setActiveTab] = useState<'all' | Work['type']>("all")
+  const [modalContent, setModalContent] = useState<Work | null>(null)
 
   const filteredWorks = activeTab === "all" ? works : works.filter(work => work.type === activeTab)
 
-  const openModal = (work) => {
+  const openModal = (work: Work) => {
     setModalContent(work)
   }
 
@@ -65,13 +74,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-base-100">
       <Head>
-        <title>AI Creations Portfolio</title>
+        <title>Generative AI - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">AI Creations Portfolio</a>
+          <a className="btn btn-ghost normal-case text-xl">Generative AI - Portfolio</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
@@ -83,10 +92,10 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-8">
         <section className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold">John Doe</h1>
-          <p className="mb-6 text-xl">AI Artist & Creative Technologist</p>
+          <h1 className="mb-4 text-4xl font-bold">Creative Generative AI - Dev Team</h1>
+          <p className="mb-6 text-xl">Research & Development Department</p>
           <p className="mx-auto max-w-2xl">
-            Explore my diverse collection of AI-generated content, spanning across various mediums including images, 
+            Explore our diverse collection of AI-generated content, spanning across various mediums including images, 
             videos, audio, and interactive experiences.
           </p>
         </section>
