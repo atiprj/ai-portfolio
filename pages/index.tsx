@@ -87,6 +87,15 @@ const works: Work[] = [
     type: "image",
     content: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=1200&fit=crop",
   },
+  {
+    id: 9,
+    title: "AI Sketch To Video - VideoMaker",
+    description: "A mesmerizing video sequence created by our AI video model interpolazion from ",
+    tool: "SD+Deforum",
+    date: "2023.06.28",
+    type: "video",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/IG_TB-A_60sec.mp4",
+  },
 ]
 
 export default function Home() {
