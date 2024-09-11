@@ -46,7 +46,7 @@ const works: Work[] = [
     title: "2023.10.24 AI Sketch To Image - Interpolation",
     description: "A mesmerizing video sequence created by our AI video model interpolazion from ",
     type: "video",
-    content: "https://drive.google.com/uc?id=1Wqg61nhEDu5AW7L_rflySSf3GA23YIET",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2023.10.24_sketch_to_image.mp4",
   },
   {
     id: 6,
@@ -159,7 +159,7 @@ export default function Home() {
 
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <div>
-          <p>© 2023 John Doe. All rights reserved.</p>
+          <p>© 2022 atiprj. All rights reserved.</p>
         </div>
       </footer>
 
