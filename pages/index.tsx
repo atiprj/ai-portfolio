@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Particles } from "@tsparticles/react"
 
 // Define the Work type
 type Work = {
@@ -96,75 +95,13 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-base-100 relative">
+    <div className="min-h-screen bg-base-100">
       <Head>
         <title>Generative AI - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Particles effect */}
-      <Particles
-        id="tsparticles"
-        options={{
-          background: {
-            color: {
-              value: "#ffffff",
-            },
-          },
-          fpsLimit: 60,
-          particles: {
-            color: {
-              value: "#000000",
-            },
-            links: {
-              color: "#000000",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-              },
-              value: 50,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
-          detectRetina: true,
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: "repulse",  // Effetto di repulsione delle particelle quando si passa sopra
-              },
-            },
-          },
-        }}
-      />
-
-      <div className="navbar bg-base-100 relative z-10">
+      <div className="navbar bg-base-100">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">Generative AI - Portfolio</a>
         </div>
@@ -176,9 +113,9 @@ export default function Home() {
         </div>
       </div>
 
-      <main className="container mx-auto px-4 py-8 relative z-10">
+      <main className="container mx-auto px-4 py-8">
         <section className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold hover:text-blue-500 hover:scale-105 hover:text-shadow-lg transition-all duration-300">
+          <h1 className="mb-4 text-4xl font-bold hover:text-blue-500 hover:scale-105 hover:text-shadow-lg transition-all duration-300 hover:animate-bounce">
             Creative Generative AI - Dev Team
           </h1>
           <p className="mb-6 text-xl">Research & Development Department</p>
@@ -239,7 +176,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content relative z-10">
+      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <div>
           <p>© 2023 John Doe. All rights reserved.</p>
         </div>
