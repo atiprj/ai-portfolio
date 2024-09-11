@@ -18,14 +18,14 @@ const works: Work[] = [
     title: "2023.10.24 - ARC - GreenFacade",
     description: "A stunning BAUBAUBAU created by our Stable Diffusion Test AI model.",
     type: "image",
-    content: "https://github.com/atiprj/ai-portfolio/blob/2e56a4ffc46be11b2a92feb12e650d94d7cd13cf/2023.10.24_SD-00105-2857680428.jpg",
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2023.10.24_SD-00105-2857680428.jpg?raw=true",
   },
   {
     id: 2,
     title: "2023.06.22 - ARC - Skyscraper",
     description: "A stunning BAUBAUBAU created by our Stable Diffusion Interpoaltion Test AI model.",
     type: "image",
-    content: "https://github.com/atiprj/ai-portfolio/blob/2e56a4ffc46be11b2a92feb12e650d94d7cd13cf/2023.06.22_SD-Dint-00074-2613490247.0.jpg",
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2023.06.22_SD-Dint-00074-2613490247.0.jpg?raw=true",
   },
   {
     id: 3,
