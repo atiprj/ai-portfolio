@@ -115,7 +115,9 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-8">
         <section className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold">Creative Generative AI - Dev Team</h1>
+          <h1 className="mb-4 text-4xl font-bold hover:text-blue-500 hover:scale-105 hover:text-shadow-lg transition-all duration-300 hover:animate-bounce">
+            Creative Generative AI - Dev Team
+          </h1>
           <p className="mb-6 text-xl">Research & Development Department</p>
           <p className="mx-auto max-w-2xl">
             Explore our diverse collection of AI-generated content, spanning across various mediums including images, 
@@ -176,7 +178,7 @@ export default function Home() {
 
       <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <div>
-          <p>© 2022 atiprj. All rights reserved.</p>
+          <p>© 2023 John Doe. All rights reserved.</p>
         </div>
       </footer>
 
