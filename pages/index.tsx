@@ -15,8 +15,8 @@ type Work = {
 const works: Work[] = [
   {
     id: 1,
-    title: "AI-Generated Landscape",
-    description: "A stunning landscape created by our custom AI model.",
+    title: "AI-Generated Architecture",
+    description: "A stunning BAUBAUBAU created by our custom AI model.",
     type: "image",
     content: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&h=800&fit=crop",
   },
