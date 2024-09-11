@@ -18,14 +18,14 @@ const works: Work[] = [
     title: "2023.10.24 - ARC - GreenFacade",
     description: "A stunning BAUBAUBAU created by our Stable Diffusion Test AI model.",
     type: "image",
-    content: "https://drive.google.com/uc?export=download&id=1YqoBrwLkV9rKCq9vLjRWoHp7Ozl0zMtQ",
+    content: "https://drive.google.com/uc?id=1YqoBrwLkV9rKCq9vLjRWoHp7Ozl0zMtQ",
   },
   {
     id: 2,
     title: "2023.06.22 - ARC - Skyscraper",
     description: "A stunning BAUBAUBAU created by our Stable Diffusion Interpoaltion Test AI model.",
     type: "image",
-    content: "https://drive.google.com/uc?export=download&id=1j3BRndS3Uq8lGEiTJ1kpLwVlJCV2MlRW",
+    content: "https://drive.google.com/uc?id=1j3BRndS3Uq8lGEiTJ1kpLwVlJCV2MlRW",
   },
   {
     id: 3,
@@ -43,10 +43,10 @@ const works: Work[] = [
   },
   {
     id: 5,
-    title: "AI Video Generation",
-    description: "A mesmerizing video sequence created by our AI video model.",
+    title: "2023.10.24 AI Sketch To Image - Interpolation",
+    description: "A mesmerizing video sequence created by our AI video model interpolazion from ",
     type: "video",
-    content: "https://example.com/ai-generated-video.mp4",
+    content: "https://drive.google.com/uc?id=1Wqg61nhEDu5AW7L_rflySSf3GA23YIET",
   },
   {
     id: 6,
