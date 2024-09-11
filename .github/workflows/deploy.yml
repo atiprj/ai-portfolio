@@ -20,6 +20,13 @@ jobs:
       - name: Build project
         run: npm run build
 
+      # Configura l'identità Git
+      - name: Configure Git
+        run: |
+          git config --global user.name "mattia.giannetti"
+          git config --global user.email "mattiagiannetti@atiproject.com"
+
+      # Esegui il deploy
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
