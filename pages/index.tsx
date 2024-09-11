@@ -110,17 +110,17 @@ export default function Home() {
   const getCardColor = (type: Work['type']) => {
     switch (type) {
       case 'image':
-        return 'bg-gray-100';
+        return 'bg-gray-400'; // Grigio chiaro
       case 'video':
-        return 'bg-gray-200';
+        return 'bg-gray-500'; // Un po' più scuro
       case 'audio':
-        return 'bg-gray-300';
+        return 'bg-gray-600'; // Ancora più scuro
       case 'text':
-        return 'bg-gray-400';
+        return 'bg-gray-700'; // Grigio scuro
       case 'embed':
-        return 'bg-gray-500';
+        return 'bg-gray-800'; // Grigio molto scuro
       default:
-        return 'bg-gray-100';
+        return 'bg-gray-900'; // Il più scuro
     }
   }
 
