@@ -40,7 +40,7 @@ const works: Work[] = [
     tool: "Loudly",
     date: "2024.08.24",
     type: "audio",
-    content: "https://www.loudly.com/music/song/aisong-Beats%20of%20the%20Cosmos-fb6ccd6a-7089-11ef-b6e3-06b28167ed55",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/audio/Beats_of_the_Cosmos.mp3",
   },
   {
     id: 4,
