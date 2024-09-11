@@ -106,6 +106,24 @@ export default function Home() {
     setModalContent(null)
   }
 
+  // Funzione per assegnare colori diversi in base al tipo di card
+  const getCardColor = (type: Work['type']) => {
+    switch (type) {
+      case 'image':
+        return 'bg-blue-200';
+      case 'video':
+        return 'bg-green-200';
+      case 'audio':
+        return 'bg-yellow-200';
+      case 'text':
+        return 'bg-purple-200';
+      case 'embed':
+        return 'bg-red-200';
+      default:
+        return 'bg-gray-200';
+    }
+  }
+
   return (
     <div className="min-h-screen bg-base-100">
       <Head>
@@ -147,12 +165,14 @@ export default function Home() {
         </div>
 
         <section className="mb-16">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"> {/* Modificato per avere 4 colonne */}
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {filteredWorks.map((work) => (
-              <div key={work.id} className="card bg-base-200 shadow-xl" onClick={() => openModal(work)}>
+              <div 
+                key={work.id} 
+                className={`card shadow-xl ${getCardColor(work.type)}`} // Applica il colore in base al tipo
+                onClick={() => openModal(work)}
+              >
                 <figure className="px-10 pt-10">
-                  {/* Mostra la data sopra il titolo */}
-                  <p className="text-sm text-gray-500">{work.date}</p> {/* Aggiunta la data */}
                   {work.type === "image" && (
                     <Image src={work.content} alt={work.title} width={400} height={300} objectFit="cover" className="rounded-xl" />
                   )}
@@ -179,7 +199,8 @@ export default function Home() {
                     </div>
                   )}
                 </figure>
-                <div className="card-body">
+                <div className="card-body text-center"> {/* Allinea i testi al centro */}
+                  <p className="text-sm text-gray-500 mb-2">{work.date}</p> {/* Data sopra il titolo */}
                   <h2 className="card-title">{work.title}</h2>
                   <p>{work.description}</p>
                   <p className="text-sm text-gray-500">Tools: {work.tool}</p>
