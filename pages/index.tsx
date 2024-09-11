@@ -46,7 +46,7 @@ const works: Work[] = [
     title: "2023.10.24 AI Sketch To Image - Interpolation",
     description: "A mesmerizing video sequence created by our AI video model interpolazion from ",
     type: "video",
-    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2023.10.24_sketch_to_image.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2023.10.24_ATI_SD-SketchToImage.mp4",
   },
   {
     id: 6,
