@@ -12,6 +12,8 @@
     "deploy": "next build && node create-nojekyll.js && gh-pages -d out --dotfiles --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
   },
   "dependencies": {
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/react": "^3.0.0",
     "next": "14.2.9",
     "react": "^18",
     "react-dom": "^18"
