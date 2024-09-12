@@ -43,7 +43,7 @@ const works: Work[] = [
     date: "2024.08.24",
     type: "audio",
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/audio/Beats_of_the_Cosmos.mp3",
-    previewImage: "https://example.com/path/to/audio-preview-image.jpg",
+    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_cover_vinyl_of_techno_ambient_track_song_title_Beats_of__1.jpg?raw=true",
   },
   {
     id: 4,
@@ -81,7 +81,7 @@ const works: Work[] = [
     date: "2024.06.29",
     type: "embed",
     content: "https://app.speckle.systems/projects/602f74e444/models/8de5ac4c1f#embed=%7B%22isEnabled%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22hideControls%22%3Atrue%2C%22hideSelectionInfo%22%3Atrue%7D",
-    previewImage: "https://example.com/path/to/audio-preview-image.jpg",
+    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/Cover-biennalelubica.png?raw=true",
   },
   {
     id: 8,
