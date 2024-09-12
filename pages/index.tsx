@@ -116,7 +116,7 @@ const works: Work[] = [
     tool: "StableDiffusion+Runway", 
     date: "2024.01.19", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.01.19_AI Sketch To Image_Project Jan1.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.01.19_AI_SketchToImage_ProjectJan1.mp4",
   },
   {    
     id: 12, 
@@ -134,7 +134,7 @@ const works: Work[] = [
     tool: "Revit+PSD+StableDiffusion+Runway", 
     date: "2024.02.12", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.12_AI 3D To Image_Project Feb1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.12_AI_3DToImage_ProjectFeb1.mp4",
   },
   {    
     id: 14, 
@@ -143,7 +143,7 @@ const works: Work[] = [
     tool: "PSD+StableDiffusion+Runway",
     date: "2024.02.15",
     type: "video",
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.15_AI Segmentation To Image_Project Feb2.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.15_AI_SegmentationToImage_ProjectFeb2.mp4",
   },
   {    
     id: 15, 
@@ -152,7 +152,7 @@ const works: Work[] = [
     tool: "Revit+PSD+StableDiffusion+Runway", 
     date: "2024.03.01", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.03.01_AI 3D To Image_Project Mar1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.03.01_AI_3DToImage_ProjectMar1.mp4",
   },
   {        
     id: 16, 
@@ -188,7 +188,7 @@ const works: Work[] = [
     tool: "MidJourney+COMFYUI+Runway", 
     date: "2024.05.20", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.05.20_AI image composition_Project May1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.05.20_AI_imagecomposition_ProjectMay1.mp4",
   },
   {      
     id: 20, 
@@ -197,7 +197,7 @@ const works: Work[] = [
     tool: "Blender+COMFYUI", 
     date: "2024.07.02", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.02_AI Blender2video_Project Jul1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.02_AI_Blender2video_ProjectJul1.mp4",
   },
   {          
     id: 21, 
@@ -206,7 +206,7 @@ const works: Work[] = [
     tool: " StableDiffusion+LUMA", 
     date: "2024.07.25", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.25_AI img2video_Project Jul2.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.25_AI_img2video_ProjectJul2.mp4",
   },
   {      
     id: 22, 
@@ -215,7 +215,7 @@ const works: Work[] = [
     tool: "SWARMUI+COMFYUI+Runway",
     date: "2024.08.31", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.08.31_AI batcher img2Img_Project Agu1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.08.31_AI_batcherimg2Img_ProjectAgu1.mp4",
   },
 ]
 
@@ -265,9 +265,8 @@ export default function Home() {
           <h1 className="mb-4 text-4xl font-bold">Creative Generative AI - Dev Team</h1>
           <p className="mb-6 text-xl text-gray-600">ATIproject - Research & Development Department</p>
           <p className="mx-auto max-w-2xl text-gray-600">
-            Explore our diverse collection of generative AI content, spanning across various mediums including images, 
-            videos, audio, and interactive experiences. Analysis and developments focused on the field of design and architecture, 
-            mixed with data management and artistic and installation creations for the recreation of immersive and innovative environments.
+            Explore our diverse collection of generative AI content, spanning across various mediums including images, videos, audio, and interactive experiences. 
+            Analysis and developments focused on the field of design and architecture, mixed with data management and artistic and installation creations for the recreation of immersive and innovative environments.
           </p>
         </section>
 
