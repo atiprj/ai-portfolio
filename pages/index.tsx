@@ -298,6 +298,16 @@ const works: Work[] = [
     type: "video", 
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/XXXXXXXX",
   },
+  {
+    id: 32,
+    title: "MDW23",
+    description: "Placed within the historical context of Palazzo Guinigi in the center of Lucca, the exhibition pavilion, Effimero, works as a communication medium for sustainability and circularity, becoming a catalyst for innovation. ‘‘Design Temporariness’’ integretes computational + AI design and the digital fabrication to obtain an adatable system that improves quality and predictability of the final outcome.",
+    tool: "Rhino+Grasshopper+Lunchbox+Speckle",
+    date: "2023.02.29",
+    type: "embed",
+    content: "https://whimsical.com/xxx-board-test-8Cfx4CcsnRQEPBUJJPxWnS",
+    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/Cover-biennalelubica.PNG?raw=true"
+  },
 ]
 
 export default function Home() {
