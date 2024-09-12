@@ -9,9 +9,10 @@ type Work = {
   title: string;
   description: string;
   tool: string;
-  date: string;  // Aggiunto campo per la data
+  date: string;
   type: 'image' | 'audio' | 'text' | 'video' | 'embed';
   content: string;
+  previewImage?: string; // New property for preview images
 }
 
 // Simulated data for AI-generated works
@@ -42,6 +43,7 @@ const works: Work[] = [
     date: "2024.08.24",
     type: "audio",
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/audio/Beats_of_the_Cosmos.mp3",
+    previewImage: "https://example.com/path/to/audio-preview-image.jpg",
   },
   {
     id: 4,
@@ -51,6 +53,7 @@ const works: Work[] = [
     date: "2022.11.24",
     type: "text",
     content: "Once upon a time in a digital realm, an AI dreamed of electric sheep...",
+    previewImage: "https://example.com/path/to/audio-preview-image.jpg",
   },
   {
     id: 5,
@@ -78,33 +81,16 @@ const works: Work[] = [
     date: "2024.06.29",
     type: "embed",
     content: "https://app.speckle.systems/projects/602f74e444/models/8de5ac4c1f#embed=%7B%22isEnabled%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22hideControls%22%3Atrue%2C%22hideSelectionInfo%22%3Atrue%7D",
+    previewImage: "https://example.com/path/to/audio-preview-image.jpg",
   },
   {
     id: 8,
-    title: "AI-Generated Portrait",
-    description: "A unique portrait created by our AI image generation model.",
-    tool: "xxx",
-    date: "2021.06.24",
-    type: "image",
-    content: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=1200&fit=crop",
-  },
-  {
-    id: 9,
     title: "AI Sketch To Video - VideoMaker",
     description: "A mesmerizing video sequence created by our AI video model interpolazion from ",
     tool: "SD+Deforum",
     date: "2023.06.28",
     type: "video",
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/IG_TB-A_60sec.mp4",
-  },
-  {
-    id: 10,
-    title: "TYOYOYOYOYYYO",
-    description: "A stunning BAUBAUBAU created by our Stable Diffusion Test AI model.",
-    tool: "xxx",
-    date: "2020.10.24",
-    type: "image",
-    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2023.10.24_SD-00105-2857680428.jpg?raw=true",
   },
 ]
 
@@ -177,16 +163,16 @@ export default function Home() {
               <div key={work.id} className="group relative overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 ease-in-out hover:z-10 hover:scale-105 hover:shadow-xl">
                 <button onClick={() => openModal(work)} className="w-full text-left">
                   <div className="relative aspect-video w-full overflow-hidden">
-                    {work.type === 'image' && (
+                    {(work.type === 'image' || work.previewImage) && (
                       <Image
-                        src={work.content}
+                        src={work.type === 'image' ? work.content : work.previewImage!}
                         alt={work.title}
                         layout="fill"
                         objectFit="cover"
                         className="transition-transform duration-300 group-hover:scale-110"
                       />
                     )}
-                    {work.type === 'video' && (
+                    {work.type === 'video' && !work.previewImage && (
                       <video
                         src={work.content}
                         className="h-full w-full object-cover"
@@ -197,17 +183,17 @@ export default function Home() {
                         onMouseOut={(e) => e.currentTarget.pause()}
                       />
                     )}
-                    {work.type === 'audio' && (
+                    {work.type === 'audio' && !work.previewImage && (
                       <div className="flex h-full w-full items-center justify-center bg-gray-200">
                         <ZoomInIcon className="h-16 w-16 text-gray-400" />
                       </div>
                     )}
-                    {work.type === 'text' && (
+                    {work.type === 'text' && !work.previewImage && (
                       <div className="flex h-full w-full items-center justify-center bg-gray-200">
                         <span className="text-2xl font-bold text-gray-400">Aa</span>
                       </div>
                     )}
-                    {work.type === 'embed' && (
+                    {work.type === 'embed' && !work.previewImage && (
                       <div className="flex h-full w-full items-center justify-center bg-gray-200">
                         <span className="text-2xl font-bold text-gray-400">&lt;/&gt;</span>
                       </div>
@@ -257,15 +243,51 @@ export default function Home() {
               <video src={modalContent.content} controls className="w-full" />
             )}
             {modalContent.type === 'audio' && (
-              <audio src={modalContent.content} controls className="w-full" />
+              <div>
+                {modalContent.previewImage && (
+                  <Image
+                    src={modalContent.previewImage}
+                    alt={modalContent.title}
+                    width={800}
+                    height={400}
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                )}
+                <audio src={modalContent.content} controls className="w-full mt-4" />
+              </div>
             )}
             {modalContent.type === 'text' && (
-              <div className="max-h-96 overflow-y-auto">
-                <p>{modalContent.content}</p>
+              <div>
+                {modalContent.previewImage && (
+                  <Image
+                    src={modalContent.previewImage}
+                    alt={modalContent.title}
+                    width={800}
+                    height={400}
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                )}
+                <div className="max-h-96 overflow-y-auto mt-4">
+                  <p>{modalContent.content}</p>
+                </div>
               </div>
             )}
             {modalContent.type === 'embed' && (
-              <iframe src={modalContent.content} className="w-full h-96" title={modalContent.title} />
+              <div>
+                {modalContent.previewImage && (
+                  <Image
+                    src={modalContent.previewImage}
+                    alt={modalContent.title}
+                    width={800}
+                    height={400}
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                )}
+                <iframe src={modalContent.content} className="w-full h-96 mt-4" title={modalContent.title} />
+              </div>
             )}
             <h3 className="mt-4 text-lg font-semibold">{modalContent.title}</h3>
             <p className="text-sm text-gray-600">{modalContent.description}</p>
