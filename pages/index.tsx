@@ -97,6 +97,15 @@ const works: Work[] = [
     type: "video",
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/IG_TB-A_60sec.mp4",
   },
+  {
+    id: 10,
+    title: "TYOYOYOYOYYYO",
+    description: "A stunning BAUBAUBAU created by our Stable Diffusion Test AI model.",
+    tool: "xxx",
+    date: "2020.10.24",
+    type: "image",
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2023.10.24_SD-00105-2857680428.jpg?raw=true",
+  },
 ]
 
 export default function Home() {
