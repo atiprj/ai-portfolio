@@ -115,7 +115,7 @@ const works: Work[] = [
     description: "A final concept render created by a text2img from sketch", 
     tool: "StableDiffusion+Runway", 
     date: "2024.01.19", 
-    type: "video", 
+    type: "video",
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.01.19_AI_SketchToImage_ProjectJan1.mp4",
   },
   {    
