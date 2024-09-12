@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import Head from 'next/head'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { ChevronUpIcon, GithubIcon, LinkedinIcon, ZoomInIcon } from 'lucide-react'
 
 // Define the Work type
 type Work = {
@@ -99,158 +100,166 @@ const works: Work[] = [
 ]
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<'all' | Work['type']>("all")
+  const [activeTab, setActiveTab] = useState<'all' | Work['type']>('all')
   const [modalContent, setModalContent] = useState<Work | null>(null)
 
-  // Filtra le card e ordina per data
-  const filteredWorks = activeTab === "all" 
-    ? works.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // Ordina per data decrescente
-    : works.filter(work => work.type === activeTab).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  const filteredWorks = activeTab === 'all'
+    ? works
+    : works.filter(work => work.type === activeTab)
 
-  const openModal = (work: Work) => {
-    setModalContent(work)
-  }
+  const openModal = (work: Work) => setModalContent(work)
+  const closeModal = () => setModalContent(null)
 
-  const closeModal = () => {
-    setModalContent(null)
-  }
-
-  // Funzione per assegnare colori tenui in scala di grigi in base al tipo di card
-  const getCardColor = (type: Work['type']) => {
-    switch (type) {
-      case 'image':
-        return 'bg-gray-900'; // Grigio chiaro
-      case 'video':
-        return 'bg-gray-800'; // Un po' più scuro
-      case 'audio':
-        return 'bg-gray-700'; // Ancora più scuro
-      case 'text':
-        return 'bg-gray-600'; // Grigio scuro
-      case 'embed':
-        return 'bg-gray-500'; // Grigio molto scuro
-      default:
-        return 'bg-gray-400'; // Il più scuro
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeModal()
     }
-  }
+    window.addEventListener('keydown', handleEscape)
+    return () => window.removeEventListener('keydown', handleEscape)
+  }, [])
 
   return (
-    <div className="min-h-screen bg-base-100">
-      <Head>
-        <title>Generative AI - Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <div className="navbar bg-base-100">
-        <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Generative AI - Portfolio</a>
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      <header className="sticky top-0 z-50 w-full border-b bg-white bg-opacity-95 backdrop-blur">
+        <div className="container mx-auto flex h-14 items-center justify-between px-4">
+          <Link href="/" className="flex items-center space-x-2">
+            <span className="hidden font-bold sm:inline-block">AI Portfolio</span>
+          </Link>
+          <nav className="flex items-center space-x-4">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2">
+              <GithubIcon className="h-5 w-5" />
+              <span className="sr-only">GitHub</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2">
+              <LinkedinIcon className="h-5 w-5" />
+              <span className="sr-only">LinkedIn</span>
+            </a>
+          </nav>
         </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
-            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
+      </header>
 
       <main className="container mx-auto px-4 py-8">
         <section className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold hover:text-blue-500 hover:scale-105 hover:text-shadow-lg transition-all duration-300 hover:animate-bounce">
-            Creative Generative AI - Dev Team
-          </h1>
-          <p className="mb-6 text-xl">Research & Development Department</p>
-          <p className="mx-auto max-w-2xl">
+          <h1 className="mb-4 text-4xl font-bold">Creative Generative AI - Dev Team</h1>
+          <p className="mb-6 text-xl text-gray-600">Research & Development Department</p>
+          <p className="mx-auto max-w-2xl text-gray-600">
             Explore our diverse collection of AI-generated content, spanning across various mediums including images, 
             videos, audio, and interactive experiences.
           </p>
         </section>
 
-        <div className="tabs tabs-boxed justify-center mb-8">
-          <a className={`tab ${activeTab === "all" ? "tab-active" : ""}`} onClick={() => setActiveTab("all")}>All</a>
-          <a className={`tab ${activeTab === "image" ? "tab-active" : ""}`} onClick={() => setActiveTab("image")}>Images</a>
-          <a className={`tab ${activeTab === "video" ? "tab-active" : ""}`} onClick={() => setActiveTab("video")}>Videos</a>
-          <a className={`tab ${activeTab === "audio" ? "tab-active" : ""}`} onClick={() => setActiveTab("audio")}>Audio</a>
-          <a className={`tab ${activeTab === "text" ? "tab-active" : ""}`} onClick={() => setActiveTab("text")}>Text</a>
-          <a className={`tab ${activeTab === "embed" ? "tab-active" : ""}`} onClick={() => setActiveTab("embed")}>Interactive</a>
+        <div className="mb-8 flex justify-center space-x-2">
+          {['all', 'image', 'video', 'audio', 'text', 'embed'].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab as 'all' | Work['type'])}
+              className={`px-4 py-2 rounded-md ${activeTab === tab ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'}`}
+            >
+              {tab.charAt(0).toUpperCase() + tab.slice(1)}
+            </button>
+          ))}
         </div>
 
         <section className="mb-16">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {filteredWorks.map((work) => (
-              <div 
-                key={work.id} 
-                className={`card shadow-xl ${getCardColor(work.type)}`} // Applica il colore in base al tipo
-                onClick={() => openModal(work)}
-              >
-                <figure className="px-10 pt-10">
-                  {work.type === "image" && (
-                    <Image src={work.content} alt={work.title} width={400} height={300} objectFit="cover" className="rounded-xl" />
-                  )}
-                  {work.type === "video" && (
-                    <video src={work.content} className="h-64 w-full object-cover rounded-xl" muted loop playsInline />
-                  )}
-                  {work.type === "audio" && (
-                    <div className="flex h-64 items-center justify-center bg-base-300 rounded-xl">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                      </svg>
-                    </div>
-                  )}
-                  {work.type === "text" && (
-                    <div className="flex h-64 items-center justify-center bg-base-300 rounded-xl p-4">
-                      <p className="text-center line-clamp-5">{work.content}</p>
-                    </div>
-                  )}
-                  {work.type === "embed" && (
-                    <div className="flex h-64 items-center justify-center bg-base-300 rounded-xl">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </div>
-                  )}
-                </figure>
-                <div className="card-body text-left space-y-4"> {/* Allinea il testo a sinistra e imposta spaziatura uniforme */}
-                  <p className="text-sm text-gray-500">{work.date}</p> {/* Data sopra il titolo */}
-                  <h2 className="card-title">{work.title}</h2>
-                  <p>{work.description}</p>
-                  <p className="text-sm text-gray-500">Tools: {work.tool}</p>
-                </div>
+              <div key={work.id} className="group relative overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 ease-in-out hover:z-10 hover:scale-105 hover:shadow-xl">
+                <button onClick={() => openModal(work)} className="w-full text-left">
+                  <div className="relative aspect-video w-full overflow-hidden">
+                    {work.type === 'image' && (
+                      <Image
+                        src={work.content}
+                        alt={work.title}
+                        layout="fill"
+                        objectFit="cover"
+                        className="transition-transform duration-300 group-hover:scale-110"
+                      />
+                    )}
+                    {work.type === 'video' && (
+                      <video
+                        src={work.content}
+                        className="h-full w-full object-cover"
+                        muted
+                        loop
+                        playsInline
+                        onMouseOver={(e) => e.currentTarget.play()}
+                        onMouseOut={(e) => e.currentTarget.pause()}
+                      />
+                    )}
+                    {work.type === 'audio' && (
+                      <div className="flex h-full w-full items-center justify-center bg-gray-200">
+                        <ZoomInIcon className="h-16 w-16 text-gray-400" />
+                      </div>
+                    )}
+                    {work.type === 'text' && (
+                      <div className="flex h-full w-full items-center justify-center bg-gray-200">
+                        <span className="text-2xl font-bold text-gray-400">Aa</span>
+                      </div>
+                    )}
+                    {work.type === 'embed' && (
+                      <div className="flex h-full w-full items-center justify-center bg-gray-200">
+                        <span className="text-2xl font-bold text-gray-400">&lt;/&gt;</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 className="text-lg font-semibold text-white">{work.title}</h3>
+                    <p className="text-sm text-gray-200">{work.description}</p>
+                  </div>
+                </button>
               </div>
             ))}
           </div>
         </section>
       </main>
 
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
-        <div>
-          <p>© 2023 John Doe. All rights reserved.</p>
-        </div>
+      <footer className="mt-16 border-t py-6 text-center text-gray-600">
+        <p>© 2023 Creative Generative AI - Dev Team. All rights reserved.</p>
       </footer>
 
+      <button
+        className="fixed bottom-4 right-4 rounded-full bg-blue-500 p-2 text-white shadow-lg"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        aria-label="Scroll to top"
+      >
+        <ChevronUpIcon className="h-5 w-5" />
+      </button>
+
       {modalContent && (
-        <div className="modal modal-open">
-          <div className="modal-box">
-            {modalContent.type === "image" && (
-              <Image src={modalContent.content} alt={modalContent.title} width={1000} height={800} objectFit="contain" />
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal}>
+          <div className="max-w-3xl w-full bg-white p-4 rounded-lg" onClick={(e) => e.stopPropagation()}>
+            {modalContent.type === 'image' && (
+              <Image
+                src={modalContent.content}
+                alt={modalContent.title}
+                width={800}
+                height={600}
+                layout="responsive"
+                objectFit="contain"
+              />
             )}
-            {modalContent.type === "video" && (
+            {modalContent.type === 'video' && (
               <video src={modalContent.content} controls className="w-full" />
             )}
-            {modalContent.type === "audio" && (
+            {modalContent.type === 'audio' && (
               <audio src={modalContent.content} controls className="w-full" />
             )}
-            {modalContent.type === "text" && (
+            {modalContent.type === 'text' && (
               <div className="max-h-96 overflow-y-auto">
                 <p>{modalContent.content}</p>
               </div>
             )}
-            {modalContent.type === "embed" && (
+            {modalContent.type === 'embed' && (
               <iframe src={modalContent.content} className="w-full h-96" title={modalContent.title} />
             )}
-            <h3 className="font-bold text-lg mt-4">{modalContent.title}</h3>
-            <p className="py-4">{modalContent.description}</p>
-            <div className="modal-action">
-              <button className="btn" onClick={closeModal}>Close</button>
-            </div>
+            <h3 className="mt-4 text-lg font-semibold">{modalContent.title}</h3>
+            <p className="text-sm text-gray-600">{modalContent.description}</p>
+            <button
+              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
+              onClick={closeModal}
+            >
+              Close
+            </button>
           </div>
         </div>
       )}
