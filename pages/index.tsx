@@ -116,7 +116,7 @@ const works: Work[] = [
     tool: "StableDiffusion+Runway", 
     date: "2024.01.19", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.01.19_AI Sketch To Image - Project Jan1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.01.19_AI Sketch To Image_Project Jan1.mp4",
   },
   {    
     id: 12, 
@@ -125,16 +125,16 @@ const works: Work[] = [
     tool: "StableDiffusion+AnimeDiff", 
     date: "2024.01.25", 
     type: "image", 
-    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2024.01.025_AI Text To Gif - Project Jan.gif?raw=true",
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2024.01.025_AI Text To Gif_Project Jan2.gif?raw=true",
   },
   {    
     id: 13, 
-    title: "3D-To-Image - Masterplan Massing test", 
+    title: "3D-To-Image - Masterplan Massing test",
     description: "A preliminary project concept design render created by a text2img from sketch", 
     tool: "Revit+PSD+StableDiffusion+Runway", 
     date: "2024.02.12", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.12_AI 3D To Image - Project Feb1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.12_AI 3D To Image_Project Feb1.mp4",
   },
   {    
     id: 14, 
@@ -143,7 +143,7 @@ const works: Work[] = [
     tool: "PSD+StableDiffusion+Runway",
     date: "2024.02.15",
     type: "video",
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.15_AI Segmentation To Image - Project Feb2.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.15_AI Segmentation To Image_Project Feb2.mp4",
   },
   {    
     id: 15, 
@@ -152,7 +152,7 @@ const works: Work[] = [
     tool: "Revit+PSD+StableDiffusion+Runway", 
     date: "2024.03.01", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.03.01_AI 3D To Image - Project Mar1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.03.01_AI 3D To Image_Project Mar1.mp4",
   },
   {        
     id: 16, 
@@ -161,7 +161,7 @@ const works: Work[] = [
     tool: "GrassHopper+StableDiffusion+COMFYUI", 
     date: "2024.03.25", 
     type: "image", 
-    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2024.03.25_AI Grass hopper To Image - Project Mar2.gif?raw=true",
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2024.03.25_AI Grass hopper To Image_Project Mar2.gif?raw=true",
   },
   {        
     id: 17, 
@@ -179,7 +179,7 @@ const works: Work[] = [
     tool: "MidJourney+COMFYUI", 
     date: "2024.04.12", 
     type: "image", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.04.12_AI Logo to Image- Project Apr2.gif",
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/2024.04.12_AI Logo to Image_Project Apr2.gif?raw=true",
   },
   {      
     id: 19, 
@@ -188,7 +188,7 @@ const works: Work[] = [
     tool: "MidJourney+COMFYUI+Runway", 
     date: "2024.05.20", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.05.20_AI image composition- Project May1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.05.20_AI image composition_Project May1.mp4",
   },
   {      
     id: 20, 
@@ -197,7 +197,7 @@ const works: Work[] = [
     tool: "Blender+COMFYUI", 
     date: "2024.07.02", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.02_AI Blender2video- Project Jul1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.02_AI Blender2video_Project Jul1.mp4",
   },
   {          
     id: 21, 
@@ -206,7 +206,7 @@ const works: Work[] = [
     tool: " StableDiffusion+LUMA", 
     date: "2024.07.25", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.25_AI img2video- Project Jul2.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.25_AI img2video_Project Jul2.mp4",
   },
   {      
     id: 22, 
@@ -215,7 +215,7 @@ const works: Work[] = [
     tool: "SWARMUI+COMFYUI+Runway",
     date: "2024.08.31", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.08.31_AI batcher img2Img- Project Agu1.mp4",
+    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.08.31_AI batcher img2Img_Project Agu1.mp4",
   },
 ]
 
@@ -245,7 +245,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-white bg-opacity-95 backdrop-blur">
         <div className="container mx-auto flex h-14 items-center justify-between px-4">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="hidden font-bold sm:inline-block">AI Portfolio</span>
+            <span className="hidden font-bold sm:inline-block">GenAI Portfolio</span>
           </Link>
           <nav className="flex items-center space-x-4">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-2">
@@ -263,10 +263,11 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         <section className="mb-12 text-center">
           <h1 className="mb-4 text-4xl font-bold">Creative Generative AI - Dev Team</h1>
-          <p className="mb-6 text-xl text-gray-600">Research & Development Department</p>
+          <p className="mb-6 text-xl text-gray-600">ATIproject - Research & Development Department</p>
           <p className="mx-auto max-w-2xl text-gray-600">
-            Explore our diverse collection of AI-generated content, spanning across various mediums including images, 
-            videos, audio, and interactive experiences.
+            Explore our diverse collection of generative AI content, spanning across various mediums including images, 
+            videos, audio, and interactive experiences. Analysis and developments focused on the field of design and architecture, 
+            mixed with data management and artistic and installation creations for the recreation of immersive and innovative environments.
           </p>
         </section>
 
@@ -340,7 +341,7 @@ export default function Home() {
       </main>
 
       <footer className="mt-16 border-t py-6 text-center text-gray-600">
-        <p>© 2023 Creative Generative AI - Dev Team. All rights reserved.</p>
+        <p>© 2022 ATIproject - R&D Dep. All rights reserved.</p>
       </footer>
 
       <button
