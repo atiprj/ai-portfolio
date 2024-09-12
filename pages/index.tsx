@@ -251,7 +251,7 @@ const works: Work[] = [
     tool: "MidJourney", 
     date: "2023.04.15", 
     type: "image", 
-    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/ATI_view_from_the_ocean_of_a_long_coast_of_a_series_of_explorat?raw=true",
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/ATI_view_from_the_ocean_of_a_long_coast_of_a_series_of_explorat.png?raw=true",
   },
   {          
     id: 27, 
