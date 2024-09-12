@@ -111,7 +111,7 @@ const works: Work[] = [
   },
   {
     id: 11, 
-    title: "Sketch-To-Image - New Hospital Concpet", 
+    title: "Sketch-To-Image - New Hospital Concept", 
     description: "A final concept render created by a text2img from sketch", 
     tool: "StableDiffusion+Runway", 
     date: "2024.01.19", 
@@ -134,7 +134,7 @@ const works: Work[] = [
     tool: "Revit+PSD+StableDiffusion+Runway", 
     date: "2024.02.12", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.12_AI_3DToImage_ProjectFeb1.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.02.12_AI_3DToImage_ProjectFeb1.mp4",
   },
   {    
     id: 14, 
@@ -143,7 +143,7 @@ const works: Work[] = [
     tool: "PSD+StableDiffusion+Runway",
     date: "2024.02.15",
     type: "video",
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.02.15_AI_SegmentationToImage_ProjectFeb2.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.02.15_AI_SegmentationToImage_ProjectFeb2.mp4",
   },
   {    
     id: 15, 
@@ -152,7 +152,7 @@ const works: Work[] = [
     tool: "Revit+PSD+StableDiffusion+Runway", 
     date: "2024.03.01", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.03.01_AI_3DToImage_ProjectMar1.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.03.01_AI_3DToImage_ProjectMar1.mp4",
   },
   {        
     id: 16, 
@@ -188,7 +188,7 @@ const works: Work[] = [
     tool: "MidJourney+COMFYUI+Runway", 
     date: "2024.05.20", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.05.20_AI_imagecomposition_ProjectMay1.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.05.20_AI_imagecomposition_ProjectMay1.mp4",
   },
   {      
     id: 20, 
@@ -197,7 +197,7 @@ const works: Work[] = [
     tool: "Blender+COMFYUI", 
     date: "2024.07.02", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.02_AI_Blender2video_ProjectJul1.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.07.02_AI_Blender2video_ProjectJul1.mp4",
   },
   {          
     id: 21, 
@@ -206,7 +206,7 @@ const works: Work[] = [
     tool: " StableDiffusion+LUMA", 
     date: "2024.07.25", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.07.25_AI_img2video_ProjectJul2.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.07.25_AI_img2video_ProjectJul2.mp4",
   },
   {      
     id: 22, 
@@ -215,7 +215,7 @@ const works: Work[] = [
     tool: "SWARMUI+COMFYUI+Runway",
     date: "2024.08.31", 
     type: "video", 
-    content: "https://github.com/atiprj/aiportfolio/raw/main/media/video/2024.08.31_AI_batcherimg2Img_ProjectAgu1.mp4",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/2024.08.31_AI_batcherimg2Img_ProjectAgu1.mp4",
   },
 ]
 
@@ -263,9 +263,9 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         <section className="mb-12 text-center">
           <h1 className="mb-4 text-4xl font-bold">Creative Generative AI - Dev Team</h1>
-          <p className="mb-6 text-xl text-gray-600">ATIproject - Research & Development Department</p>
+          <p className="mb-6 text-xl text-gray-600">atiprj - Research & Development Department</p>
           <p className="mx-auto max-w-2xl text-gray-600">
-            Explore our diverse collection of generative AI content, spanning across various mediums including images, videos, audio, and interactive experiences. 
+            Explore our diverse collection of generative AI content, spanning across various mediums including images, videos, audio, and interactive experiences.
             Analysis and developments focused on the field of design and architecture, mixed with data management and artistic and installation creations for the recreation of immersive and innovative environments.
           </p>
         </section>
