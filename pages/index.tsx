@@ -103,9 +103,11 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<'all' | Work['type']>('all')
   const [modalContent, setModalContent] = useState<Work | null>(null)
 
+  const sortedWorks = [...works].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+
   const filteredWorks = activeTab === 'all'
-    ? works
-    : works.filter(work => work.type === activeTab)
+    ? sortedWorks
+    : sortedWorks.filter(work => work.type === activeTab)
 
   const openModal = (work: Work) => setModalContent(work)
   const closeModal = () => setModalContent(null)
@@ -205,6 +207,10 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <h3 className="text-lg font-semibold text-white">{work.title}</h3>
                     <p className="text-sm text-gray-200">{work.description}</p>
+                    <div className="mt-2 flex justify-between text-xs text-gray-300">
+                      <span>{work.date}</span>
+                      <span>{work.tool}</span>
+                    </div>
                   </div>
                 </button>
               </div>
@@ -254,6 +260,10 @@ export default function Home() {
             )}
             <h3 className="mt-4 text-lg font-semibold">{modalContent.title}</h3>
             <p className="text-sm text-gray-600">{modalContent.description}</p>
+            <div className="mt-2 flex justify-between text-xs text-gray-500">
+              <span>{modalContent.date}</span>
+              <span>{modalContent.tool}</span>
+            </div>
             <button
               className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
               onClick={closeModal}
