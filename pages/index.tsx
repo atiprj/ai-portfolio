@@ -165,8 +165,8 @@ const works: Work[] = [
   },
   {        
     id: 17, 
-    title: "RealImage-To-Image - Futuristic Painting Blend", 
-    description: "An imaginary design of Piazzale Loreto in Milan blended with famous Futuristic paintings",
+    title: "Painting-To-Image - Futuristic Painting Blend", 
+    description: "An imaginary design of Piazzale Loreto in Milan blended with Gerardo Dottori - Città in fiamme painting",
     tool: "GoogleEarth+COMFYUI", 
     date: "2024.04.04", 
     type: "image", 
@@ -417,7 +417,25 @@ const works: Work[] = [
     type: "embed",
     content: "https://app.speckle.systems/projects/ef36434858/models/a007471a0b#embed=%7B%22isEnabled%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22hideControls%22%3Atrue%2C%22hideSelectionInfo%22%3Atrue%7D",
     previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/Ph.-Gabriele-Giussani-5-16-9-2048x1152.jpg?raw=true"
-  },                                   
+  },
+  {        
+    id: 45, 
+    title: "Painting-To-Image - Futuristic Painting Blend", 
+    description: "An imaginary design of Piazzale Loreto in Milan blended with Tullio Crali - Città Futurista painting",
+    tool: "GoogleEarth+COMFYUI", 
+    date: "2024.04.05", 
+    type: "image", 
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/ComfyUI_02133_-min.png?raw=true",
+  }, 
+  {        
+    id: 46, 
+    title: "Painting-To-Image - Futuristic Painting Blend", 
+    description: "An imaginary design of Castello Sforzesco in Milan blended with Boccioni painting",
+    tool: "GoogleEarth+COMFYUI", 
+    date: "2024.04.06", 
+    type: "image", 
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/ComfyUI_02106_-min.png?raw=true",
+  },                                    
 ]
 
 export default function Home() {
