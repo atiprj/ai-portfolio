@@ -389,7 +389,16 @@ const works: Work[] = [
     date: "2022.10.05", 
     type: "image", 
     content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_httpss_entrtender-min.png?raw=true",
-  },                               
+  },
+  {          
+    id: 42, 
+    title: "Text-to-Image - Temporary Organic Installation", 
+    description: "innovative temporary installation, natural materials, bamboo wood, light reticular structure, square and triangular meshes, double-curved surfaces, adaptive shape, research, internal view, aseptic and symmetrical white environment, volumetric light, rendering", 
+    tool: "MidJourney-V3", 
+    date: "2023.02.02", 
+    type: "image", 
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_innovative_temporary_installation_natural.png?raw=true",
+  },                                 
 ]
 
 export default function Home() {
