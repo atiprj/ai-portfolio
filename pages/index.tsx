@@ -444,7 +444,25 @@ const works: Work[] = [
     date: "2024.04.07", 
     type: "image", 
     content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/ComfyUI_02118_-min.png?raw=true",
-  },                                        
+  },  
+  {    
+  id: 48, 
+    title: "Sketch-to-Image - Tablet Live Rendering", 
+    description: "xxxxxxxxxxxxxxxx", 
+    tool: "StableDiffusion+COMFYUI+ReMarkable", 
+    date: "2024.05.15", 
+    type: "video", 
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Sketch-to-image Real Time.mp4",
+  }, 
+  {    
+  id: 49, 
+  title: "CaptureScreen-to-Image - Web 3D-Navigation Live Rendering", 
+  description: "xxxxxxxxxxxxx", 
+  tool: "StableDiffusion+COMFYUI+WebBrowser", 
+  date: "2024.05.22", 
+  type: "video", 
+  content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Web Model-to-image Real Time.mp4",
+},                                           
 ]
 
 export default function Home() {
