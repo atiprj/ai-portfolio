@@ -336,6 +336,15 @@ const works: Work[] = [
     type: "video", 
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/ATI_MDW23_S3_IG-V.mp4",
   },
+  {          
+    id: 36, 
+    title: "Text-to-Image - Sperimental", 
+    description: "Sculptural, allegorical renaissance facades", 
+    tool: "MidJourney-V3", 
+    date: "2022.09.30", 
+    type: "image", 
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_httpsi.mj_sculptural-min.png?raw=true",
+  },          
 ]
 
 export default function Home() {
