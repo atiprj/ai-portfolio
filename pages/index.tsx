@@ -296,7 +296,7 @@ const works: Work[] = [
     tool: "MidJourney+Recap+AfterEfects", 
     date: "2023.04.17", 
     type: "video", 
-    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/XXXXXXXX",
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/PC_videoGG.mp4",
   },
   {
     id: 32,
