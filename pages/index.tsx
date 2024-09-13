@@ -401,12 +401,22 @@ const works: Work[] = [
   },
   {          
     id: 43, 
-    title: "Text-to-Image - Temporary Organic Installation", 
+    title: "Text-to-Image - Auditorium Elevation Evolution", 
     description: "large auditorium elevated on poles at the beach shore with a forest background, 2, dynamic panel facade, people walk along the beach, sunset, Photojournalism, sunrise, 8K, Ultra-HD, Global Illumination", 
     tool: "MidJourney-V4", 
     date: "2023.03.02", 
     type: "image", 
     content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_innovative_temporary_installation_natural.png?raw=true",
+  },
+  {
+    id: 44,
+    title: "Generative Circularity - Lucca Biennale Cartasia 2022",
+    description: "New spatial relations with the exceptional context of the Galleria del Palazzo Ducale",
+    tool: "Rhino+Grasshopper+Lunchbox+Speckle",
+    date: "2022.07.10",
+    type: "embed",
+    content: "https://app.speckle.systems/projects/ef36434858/models/a007471a0b#embed=%7B%22isEnabled%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22hideControls%22%3Atrue%2C%22hideSelectionInfo%22%3Atrue%7D",
+    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/Ph.-Gabriele-Giussani-5-16-9-2048x1152.jpg?raw=true"
   },                                   
 ]
 
