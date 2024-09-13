@@ -338,13 +338,31 @@ const works: Work[] = [
   },
   {          
     id: 36, 
-    title: "Text-to-Image - Sperimental", 
+    title: "Text-to-Image - Sperimental allegory", 
     description: "Sculptural, allegorical renaissance facades", 
     tool: "MidJourney-V3", 
     date: "2022.09.30", 
     type: "image", 
     content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_httpsi.mj_sculptural-min.png?raw=true",
-  },          
+  },
+  {          
+    id: 37, 
+    title: "Text-to-Image - Sperimental Render", 
+    description: "architecture hi tech, prospective view, realistic rendering, many people, external view", 
+    tool: "MidJourney-V3", 
+    date: "2022.09.30", 
+    type: "image", 
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_httpsi_hitechexternal-min.png?raw=true",
+  },
+  {          
+    id: 38, 
+    title: "Text-to-Image - Sperimental  Interior Simmetry", 
+    description: "living in a forest, 2 inside a building, vegetation, CO2 absorption, vegetation for human well-being, people, high ceilings, 3, large glass and aluminum skylights, 4, very bright, light structures, fir wood finishes, wood inlays made by a sculptor, 4, symmetrical geometries, 5, perspective, innovative architecture", 
+    tool: "MidJourney-V3", 
+    date: "2022.09.30", 
+    type: "image", 
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_httpsi_intsimmetry-min.png?raw=true",
+  },                  
 ]
 
 export default function Home() {
