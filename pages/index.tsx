@@ -297,16 +297,44 @@ const works: Work[] = [
     date: "2023.04.17", 
     type: "video", 
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/PC_videoGG.mp4",
+    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/Cover-videoGG.PNG?raw=true"
   },
   {
-    id: 32,
-    title: "MDW23",
-    description: "Placed within the historical context of Palazzo Guinigi in the center of Lucca, the exhibition pavilion, Effimero, works as a communication medium for sustainability and circularity, becoming a catalyst for innovation. ‘‘Design Temporariness’’ integretes computational + AI design and the digital fabrication to obtain an adatable system that improves quality and predictability of the final outcome.",
-    tool: "Rhino+Grasshopper+Lunchbox+Speckle",
-    date: "2023.02.29",
-    type: "embed",
-    content: "https://whimsical.com/xxx-board-test-8Cfx4CcsnRQEPBUJJPxWnS",
-    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/Cover-biennalelubica.PNG?raw=true"
+    id: 32, 
+    title: "MDW23", 
+    description: "A video generation blending a logo to an image with an img2img process", 
+    tool: "MidJourney+Recap+AfterEfects", 
+    date: "2023.04.17", 
+    type: "video", 
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/ATI_MDW23_D1_IG-V.mp4",
+    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/Cover-videoGG.PNG?raw=true"
+  },
+  {
+    id: 33, 
+    title: "MDW23", 
+    description: "A video generation blending a logo to an image with an img2img process", 
+    tool: "MidJourney+Recap+AfterEfects", 
+    date: "2023.04.17", 
+    type: "video", 
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/ATI_MDW23_S1_IG-V.mp4",
+  },
+  {
+    id: 34, 
+    title: "MDW23", 
+    description: "A video generation blending a logo to an image with an img2img process", 
+    tool: "MidJourney+Recap+AfterEfects", 
+    date: "2023.04.17", 
+    type: "video", 
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/ATI_MDW23_S2_IG-V.mp4",
+  },
+  {
+    id: 35, 
+    title: "MDW23", 
+    description: "A video generation blending a logo to an image with an img2img process", 
+    tool: "MidJourney+Recap+AfterEfects", 
+    date: "2023.04.17", 
+    type: "video", 
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/ATI_MDW23_S3_IG-V.mp4",
   },
 ]
 
