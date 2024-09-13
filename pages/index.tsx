@@ -307,7 +307,6 @@ const works: Work[] = [
     date: "2023.04.17", 
     type: "video", 
     content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/ATI_MDW23_D1_IG-V.mp4",
-    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/Cover-videoGG.PNG?raw=true"
   },
   {
     id: 33, 
@@ -405,14 +404,15 @@ const works: Work[] = [
     description: "large auditorium elevated on poles at the beach shore with a forest background, 2, dynamic panel facade, people walk along the beach, sunset, Photojournalism, sunrise, 8K, Ultra-HD, Global Illumination", 
     tool: "MidJourney-V4", 
     date: "2023.03.02", 
-    type: "image", 
-    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_innovative_temporary_installation_natural.png?raw=true",
+    type: "video", 
+    content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/ATI_large_auditorium_elevated - Frame Interpolation-comp.mp4",
+    previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/ATI_large_auditorium_elevated_FrameInterpolation-comp.gif?raw=true"
   },
   {
     id: 44,
     title: "Generative Circularity - Lucca Biennale Cartasia 2022",
-    description: "New spatial relations with the exceptional context of the Galleria del Palazzo Ducale",
-    tool: "Rhino+Grasshopper+Lunchbox+Speckle",
+    description: "New spatial relations with the exceptional context of the Galleria del Palazzo Ducale - AI assistant for location aggregation",
+    tool: "Rhino+Grasshopper+LB+Speckle",
     date: "2022.07.10",
     type: "embed",
     content: "https://app.speckle.systems/projects/ef36434858/models/a007471a0b#embed=%7B%22isEnabled%22%3Atrue%2C%22isTransparent%22%3Atrue%2C%22hideControls%22%3Atrue%2C%22hideSelectionInfo%22%3Atrue%7D",
