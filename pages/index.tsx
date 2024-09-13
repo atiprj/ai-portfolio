@@ -265,7 +265,7 @@ const works: Work[] = [
   {          
     id: 28, 
     title: "HumanMovements-To-Scan-To-Pixel-To-3Dform-To-Image - Loop AI Iteration-E1", 
-    description: "Pointcloud movemtns", 
+    description: "Creation of suggestions of urban context project, created through laser scanning of human movements in possible new urban and natural locations. In collaboration with G", 
     tool: "MidJourney+Rhinoceros+Grasshopper+Recap+Leica+Nikon", 
     date: "2023.03.16", 
     type: "image", 
@@ -274,7 +274,7 @@ const works: Work[] = [
   {          
     id: 29, 
     title: "HumanMovements-To-Scan-To-Pixel-To-3Dform-To-Image - Loop AI Iteration-E2", 
-    description: "Pointcloud movemtns", 
+    description: "Creation of suggestions of urban context project, created through laser scanning of human movements in possible new urban and natural locations.", 
     tool: "MidJourney+Rhinoceros+Grasshopper+Recap+Leica+Nikon", 
     date: "2023.03.18", 
     type: "image", 
@@ -283,7 +283,7 @@ const works: Work[] = [
   {          
     id: 30, 
     title: "HumanMovements-To-Scan-To-Pixel-To-3Dform-To-Image - Loop AI Iteration-E3", 
-    description: "Pointcloud movemtns", 
+    description: "Creation of suggestions of urban context project, created through laser scanning of human movements in possible new urban and natural locations.", 
     tool: "MidJourney+Rhinoceros+Grasshopper+Recap+Leica+Nikon", 
     date: "2023.03.20", 
     type: "image", 
@@ -291,8 +291,8 @@ const works: Work[] = [
   },
   {          
     id: 31, 
-    title: "xxxxx", 
-    description: "A video generation blending a logo to an image with an img2img process", 
+    title: "Re-designing Space from Human Movements", 
+    description: "Photography and architecture are linked together by experimenting with innovative techniques for the regeneration of enviroment. Scans in dynamic point clouds allow us to recreate new shapes from the human perception of the spaces, working on time strach creating an organic path to developing a futuristic master plan. This is how real and digital environments are built that artificial intelligence can reinterpret, Editing and photography by Gabriele Giussani", 
     tool: "MidJourney+Recap+AfterEfects", 
     date: "2023.04.17", 
     type: "video", 
@@ -301,8 +301,8 @@ const works: Work[] = [
   },
   {
     id: 32, 
-    title: "MDW23", 
-    description: "A video generation blending a logo to an image with an img2img process", 
+    title: "MDW23 - Artificial Intuition: Design Inspired by AI - ImageIteration-D1", 
+    description: "The art of mapping is to create a context in which others can think. In the context of Artificial Intelligence, a relationship map can be used to help generate responses to prompts or queries. By identifying the relationships between different concepts or entities, an AI model can provide more accurate and relevant responses to reach the results. This is our keywords connection relationship map for the development of the installations.", 
     tool: "MidJourney+Recap+AfterEfects", 
     date: "2023.04.17", 
     type: "video", 
@@ -310,8 +310,8 @@ const works: Work[] = [
   },
   {
     id: 33, 
-    title: "MDW23", 
-    description: "A video generation blending a logo to an image with an img2img process", 
+    title: "MDW23 - Artificial Intuition: Design Inspired by AI - ImageIteration-I1", 
+    description: "Suggestions created starting from our 'Dino Compagni' School Complex. Music by Orion", 
     tool: "MidJourney+Recap+AfterEfects", 
     date: "2023.04.17", 
     type: "video", 
@@ -319,8 +319,8 @@ const works: Work[] = [
   },
   {
     id: 34, 
-    title: "MDW23", 
-    description: "A video generation blending a logo to an image with an img2img process", 
+    title: "MDW23 - Artificial Intuition: Design Inspired by AI - DataIteration-I2", 
+    description: "Suggestions created starting from our an atrium view of our HT Campus Project, Music by Orion", 
     tool: "MidJourney+Recap+AfterEfects", 
     date: "2023.04.17", 
     type: "video", 
@@ -328,8 +328,8 @@ const works: Work[] = [
   },
   {
     id: 35, 
-    title: "MDW23", 
-    description: "A video generation blending a logo to an image with an img2img process", 
+    title: "MDW23 - Artificial Intuition: Design Inspired by AI - ImageIteration-I3", 
+    description: "Suggestions created starting from our an external elevation of our HT Campus Project, Music by Orion", 
     tool: "MidJourney+Recap+AfterEfects", 
     date: "2023.04.17", 
     type: "video", 
@@ -448,7 +448,7 @@ const works: Work[] = [
   {    
   id: 48, 
     title: "Sketch-to-Image - Tablet Live Rendering", 
-    description: "xxxxxxxxxxxxxxxx", 
+    description: "Implementation of real-time diffusive models by hand drawing on interconnected digital devices", 
     tool: "StableDiffusion+COMFYUI+ReMarkable", 
     date: "2024.05.15", 
     type: "video", 
@@ -457,7 +457,7 @@ const works: Work[] = [
   {    
   id: 49, 
   title: "CaptureScreen-to-Image - Web 3D-Navigation Live Rendering", 
-  description: "xxxxxxxxxxxxx", 
+  description: "Development and testing of real-time rendering on projects in progress.", 
   tool: "StableDiffusion+COMFYUI+WebBrowser", 
   date: "2024.05.22", 
   type: "video", 
@@ -501,7 +501,7 @@ const works: Work[] = [
 },   
 {
   id: 54,
-  title: "Artificial Intuition: Design Inspired by AI - MDW - FuoriSalone 2024",
+  title: "Artificial Intuition: Design Inspired by AI - MDW23 - FuoriSalone 2023",
   description: "Images and videos create suggestions to inspire innovative design forms and approaches through the alternative use of already known tools, integrated by the exploration of AI. Fusing creativity, technology and photography, the exhibition introduces a way of exploring new possibilities for imagining objects and spaces of the future.",
   tool: "Various AI tools",
   date: "2023.04.12",
@@ -632,7 +632,7 @@ export default function Home() {
       </main>
 
       <footer className="mt-16 border-t py-6 text-center text-gray-600">
-        <p>© 2022 ATIproject - R&D Dep. All rights reserved.</p>
+        <p>© 2022 ATIproject - R&D Dep. All rights reserved. This site is created by AI tools</p>
       </footer>
 
       <button
