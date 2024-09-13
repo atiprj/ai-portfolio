@@ -398,7 +398,16 @@ const works: Work[] = [
     date: "2023.02.02", 
     type: "image", 
     content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_innovative_temporary_installation_natural.png?raw=true",
-  },                                 
+  },
+  {          
+    id: 43, 
+    title: "Text-to-Image - Temporary Organic Installation", 
+    description: "large auditorium elevated on poles at the beach shore with a forest background, 2, dynamic panel facade, people walk along the beach, sunset, Photojournalism, sunrise, 8K, Ultra-HD, Global Illumination", 
+    tool: "MidJourney-V4", 
+    date: "2023.03.02", 
+    type: "image", 
+    content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/atiprj_innovative_temporary_installation_natural.png?raw=true",
+  },                                   
 ]
 
 export default function Home() {
