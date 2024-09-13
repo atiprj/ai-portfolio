@@ -266,7 +266,7 @@ const works: Work[] = [
     id: 28, 
     title: "HumanMovements-To-Scan-To-Pixel-To-3Dform-To-Image - Loop AI Iteration-E1", 
     description: "Pointcloud movemtns", 
-    tool: "MidJourney", 
+    tool: "MidJourney+Rhinoceros+Grasshopper+Recap+Leica+Nikon", 
     date: "2023.03.16", 
     type: "image", 
     content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/PP02-b.jpg?raw=true",
@@ -275,7 +275,7 @@ const works: Work[] = [
     id: 29, 
     title: "HumanMovements-To-Scan-To-Pixel-To-3Dform-To-Image - Loop AI Iteration-E2", 
     description: "Pointcloud movemtns", 
-    tool: "MidJourney", 
+    tool: "MidJourney+Rhinoceros+Grasshopper+Recap+Leica+Nikon", 
     date: "2023.03.18", 
     type: "image", 
     content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/PP03-d.jpg?raw=true",
@@ -284,7 +284,7 @@ const works: Work[] = [
     id: 30, 
     title: "HumanMovements-To-Scan-To-Pixel-To-3Dform-To-Image - Loop AI Iteration-E3", 
     description: "Pointcloud movemtns", 
-    tool: "MidJourney", 
+    tool: "MidJourney+Rhinoceros+Grasshopper+Recap+Leica+Nikon", 
     date: "2023.03.20", 
     type: "image", 
     content: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/PP04.jpg?raw=true",
@@ -507,7 +507,7 @@ const works: Work[] = [
   date: "2023.04.12",
   type: "embed",
   content: "https://whimsical.com/embed/8pdfcP4dofpyDixHHFLzwB@or4CdLRbgrof8PTBen5GFwZ5QBDkgnjocuYAAxzce",
-  previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/covermdw23.jpg?raw=true"
+  previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/covermdw23b.jpg?raw=true"
 },                                            
 ]
 
