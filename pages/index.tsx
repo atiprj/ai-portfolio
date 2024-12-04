@@ -516,7 +516,7 @@ const works: Work[] = [
   tool: "SD+Runway",
   date: "2024.11.02",
   type: "video",
-  content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Gen-3AlphaTurbo_TextToVideo1",
+  content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Gen-3AlphaTurbo_TextToVideo1.mp4",
 },                                                 
 ]
 
