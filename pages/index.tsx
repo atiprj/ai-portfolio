@@ -521,12 +521,21 @@ const works: Work[] = [
 {
   id: 56,
   title: "Text/Sketch-To-Video - New Library Elevation",
-  description: "The scene starts in a sketch building and then suddenly realistic contemporary library appears and begins to have people walking in and out of the building, centered, superb cinematic lighting.",
+  description: "The scene starts in a sketch building and then suddenly realistic contemporary library appears and begins to have people walking in and out of the building.",
   tool: "Sketch+SD+Runway",
   date: "2024.11.05",
   type: "video",
   content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Gen-3AlphaTurbo_TextToVideo2.mp4",
-},                                                  
+},
+{
+  id: 57,
+  title: "Text/Image-To-Video - New Library Aerial night view",
+  description: "We orbit around a contemporary hospital immersed in a green park with trees and there is a city in the background, people and care are moving, hyper dynamic movement in orbiting motion, shallow depth of field.",
+  tool: "Sketch+SD+Runway",
+  date: "2024.11.15",
+  type: "video",
+  content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Gen-3AlphaTurbo_TextToVideo3.mp4",
+},                                                       
 ]
 
 export default function Home() {
