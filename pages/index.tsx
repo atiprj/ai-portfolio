@@ -508,7 +508,16 @@ const works: Work[] = [
   type: "embed",
   content: "https://whimsical.com/embed/8pdfcP4dofpyDixHHFLzwB@or4CdLRbgrof8PTBen5GFwZ5QBDkgnjocuYAAxzce",
   previewImage: "https://github.com/atiprj/ai-portfolio/blob/main/media/image/covermdw23b.jpg?raw=true"
-},                                            
+},
+{
+  id: 55,
+  title: "Text/Image-To-Video - New Hospital Entrance",
+  description: "Extreme wide angle establishing shot: hospital in vast park with people walking and stopping.",
+  tool: "SD+Runway",
+  date: "2024.11.02",
+  type: "video",
+  content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Gen-3AlphaTurbo_TextToVideo1",
+},                                                 
 ]
 
 export default function Home() {
