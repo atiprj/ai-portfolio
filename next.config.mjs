@@ -5,8 +5,8 @@ const nextConfig = {
     unoptimized: true,
     domains: ['images.unsplash.com', 'example.com'],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/ai-portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/ai-portfolio/' : '',
+  basePath: '/ai-portfolio',
+  assetPrefix: '/ai-portfolio/',
   output: 'export',
 }
 
