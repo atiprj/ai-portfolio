@@ -539,7 +539,7 @@ const works: Work[] = [
 {
   id: 58,
   title: "Image to video - Roma project",
-  description: "The scene starts showing a collage of different icons of Rome, the camera rotate and goes trough them while the icons are moving",
+  description: "The scene starts showing a collage of different icons of Rome, the camera rotate and goes trough them while the icons of topics are moving",
   tool: "MJ + Runway",
   date: "2025.06.23",
   type: "video",
