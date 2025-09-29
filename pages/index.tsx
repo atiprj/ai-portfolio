@@ -535,7 +535,16 @@ const works: Work[] = [
   date: "2024.11.15",
   type: "video",
   content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Gen-3AlphaTurbo_TextToVideo3.mp4",
-},                                                       
+},
+{
+  id: 58,
+  title: "Image to video - Roma project",
+  description: "The scene starts showing a collage of different icons of Rome, the camera rotate and goes trough them while the icons are moving",
+  tool: "MJ + Runway",
+  date: "2025.06.23",
+  type: "video",
+  content: "https://github.com/atiprj/ai-portfolio/raw/main/media/video/Roma_MML-video_23-06-2025.mp4",
+},
 ]
 
 export default function Home() {
